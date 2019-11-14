@@ -5,7 +5,7 @@ pipeline {
         DOCKER_IMAGE_NAME = "rohan4494/hello"
     }
     stages {
-        stage('Build Docker Image') {
+        stage('test') {
             steps {
                 script {
                     app = docker.build(DOCKER_IMAGE_NAME)
