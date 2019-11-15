@@ -1,5 +1,7 @@
 pipeline {
-    agent { label 'helm-deploy-slave' }
+    agent { 
+        kubernetes
+    }
     environment {
         
         DOCKER_IMAGE_NAME = "rohan4494/hello"
