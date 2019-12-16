@@ -1,6 +1,5 @@
 pipeline {
-    agent { 
-        kubernetes
+    agent { label "access-portal-dev"
     }
     environment {
         
