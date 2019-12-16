@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('test') {
             steps {
-                sh "sudo docker build -t DOCKER_IMAGE_NAME"
+                sh "sudo docker build . -t ${DOCKER_IMAGE_NAME}"
             }
         }
         stage('Push Docker Image') {
